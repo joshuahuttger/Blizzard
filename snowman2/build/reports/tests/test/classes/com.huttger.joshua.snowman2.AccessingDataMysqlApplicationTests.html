@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AccessingDataMysqlApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AccessingDataMysqlApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.huttger.joshua.snowman2.html">com.huttger.joshua.snowman2</a> &gt; AccessingDataMysqlApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.312s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.312s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>07:42:28.671 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+07:42:28.675 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+07:42:28.744 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+07:42:28.896 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+07:42:28.897 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+07:42:28.906 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 27.5.1
+  API Version: 1.47
+  Operating System: Ubuntu 24.04.2 LTS
+  Total Memory: 15846 MB
+07:42:28.923 [Test worker] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling docker image: testcontainers/ryuk:0.7.0. Please be patient; this may take some time but only needs to be done once.
+07:42:28.927 [Test worker] INFO org.testcontainers.utility.RegistryAuthLocator -- Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: testcontainers/ryuk:latest, configFile: /home/josh/.docker/config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Status 404: No config supplied. Checked in order: /home/josh/.docker/config.json (file not found), DOCKER_AUTH_CONFIG (not set)
+07:42:30.135 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Starting to pull image
+07:42:30.146 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+07:42:30.980 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (277 KB/? MB)
+07:42:31.166 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (3 MB/? MB)
+07:42:31.185 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (3 MB/6 MB)
+07:42:31.335 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling image layers:  0 pending,  3 downloaded,  1 extracted, (5 MB/6 MB)
+07:42:31.377 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling image layers:  0 pending,  3 downloaded,  2 extracted, (5 MB/6 MB)
+07:42:31.413 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pulling image layers:  0 pending,  3 downloaded,  3 extracted, (6 MB/6 MB)
+07:42:31.423 [docker-java-stream-516338723] INFO tc.testcontainers/ryuk:0.7.0 -- Pull complete. 3 layers, pulled in 1s (downloaded 6 MB at 6 MB/s)
+07:42:31.423 [Test worker] INFO tc.testcontainers/ryuk:0.7.0 -- Image testcontainers/ryuk:0.7.0 pull took PT2.499132978S
+07:42:31.436 [Test worker] INFO tc.testcontainers/ryuk:0.7.0 -- Creating container for image: testcontainers/ryuk:0.7.0
+07:42:31.594 [Test worker] INFO tc.testcontainers/ryuk:0.7.0 -- Container testcontainers/ryuk:0.7.0 is starting: e6b21026a73beb8e9397f8171157bcd0b270d497fc06317d2b5267a529a9cc4e
+07:42:31.777 [Test worker] INFO tc.testcontainers/ryuk:0.7.0 -- Container testcontainers/ryuk:0.7.0 started in PT0.341045991S
+07:42:31.781 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+07:42:31.781 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+07:42:31.781 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+07:42:31.783 [Test worker] INFO tc.mysql:latest -- Creating container for image: mysql:latest
+07:42:31.841 [Test worker] INFO tc.mysql:latest -- Container mysql:latest is starting: aa7dd7a3db926cc2535c7c2425682da1a4d97ec4ec3993e7e2c0c55e60a7064a
+07:42:31.964 [Test worker] INFO tc.mysql:latest -- Waiting for database connection to become available at jdbc:mysql://localhost:32778/test using query 'SELECT 1'
+07:42:41.132 [Test worker] INFO tc.mysql:latest -- Container mysql:latest started in PT9.348596202S
+07:42:41.132 [Test worker] INFO tc.mysql:latest -- Container is started (JDBC URL: jdbc:mysql://localhost:32778/test)
+07:42:41.173 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.huttger.joshua.snowman2.AccessingDataMysqlApplicationTests]: AccessingDataMysqlApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:42:41.236 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.huttger.joshua.snowman2.AccessingDataMysqlApplication for test class com.huttger.joshua.snowman2.AccessingDataMysqlApplicationTests
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2025-02-17T07:42:41.427-08:00  INFO 31244 --- [    Test worker] h.j.s.AccessingDataMysqlApplicationTests : Starting AccessingDataMysqlApplicationTests using Java 21.0.6 with PID 31244 (started by josh in /home/josh/SoftwareProjects/Blizzard/snowman2)
+2025-02-17T07:42:41.427-08:00  INFO 31244 --- [    Test worker] h.j.s.AccessingDataMysqlApplicationTests : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-02-17T07:42:41.703-08:00  INFO 31244 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-17T07:42:41.727-08:00  INFO 31244 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2025-02-17T07:42:41.931-08:00  INFO 31244 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-17T07:42:41.956-08:00  INFO 31244 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-02-17T07:42:41.972-08:00  INFO 31244 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-17T07:42:42.121-08:00  INFO 31244 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-17T07:42:42.135-08:00  INFO 31244 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-17T07:42:42.288-08:00  INFO 31244 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cbdc0f4
+2025-02-17T07:42:42.289-08:00  INFO 31244 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-17T07:42:42.707-08:00  INFO 31244 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table user (id integer not null, email varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+Hibernate: create table user_seq (next_val bigint) engine=InnoDB
+Hibernate: insert into user_seq values ( 1 )
+2025-02-17T07:42:42.775-08:00  INFO 31244 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-17T07:42:42.958-08:00  WARN 31244 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-17T07:42:43.161-08:00  INFO 31244 --- [    Test worker] h.j.s.AccessingDataMysqlApplicationTests : Started AccessingDataMysqlApplicationTests in 1.856 seconds (process running for 14.888)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/home/josh/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.16/4a451ee6484abac3a498df0f3b33ed00a6fced4d/byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at Feb 17, 2025, 7:42:43 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,5 +1,4 @@
 from plyer import notification
-from time import sleep
 import schedule
 import time
 
