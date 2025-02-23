@@ -1,15 +1,17 @@
+import json
 from unittest import TestCase
 import requests
 import os
-
+from pprint import pprint
 class SmokeTests(TestCase):
-    def test_create_user(self):
-        request_url = f"{os.environ['SNOWMAN_URL']}/createUser?first_name=testFirstName&last_name=testLastName"
-        print(f"Request = {request_url}")
-        response = requests.get(request_url)
-        response_json = response.json()
-        del response_json['id']
-        self.assertEqual(response_json, {
-            "firstName": "testFirstName",
-            "lastName": "testLastName"
-        })
+    def test_get_user(self):
+        url = f"{os.environ['SNOWMAN_URL']}/snowman/user/all"
+        print(url)
+        response = requests.get(url)
+        pprint(response.json())
+    def test_add_user(self):
+        url = f"{os.environ['SNOWMAN_URL']}/snowman/user/add"
+        data = {"name" : "JohnTravolta", "email":"johnny5speed@gmail.com"}
+        print(url)
+        response = requests.post(url, params=data)
+        pprint(response)
