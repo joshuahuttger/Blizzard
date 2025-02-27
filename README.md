@@ -1,2 +1,2 @@
 # Blizzard
-Project for experimenting with Spring Boot
+Project for experimenting with FastAPI
